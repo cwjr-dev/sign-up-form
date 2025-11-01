@@ -11,17 +11,20 @@
     display: flex;    
 }
 
+/* Form left */
+
 .form-left {    
     background-image: url("images/green-leaf-plant.jpg");
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
-.form-right {
-    flex: 2;
+.form-left p,
+.form-left a {    
+    color: white;
 }
 
 .logo-container {
@@ -29,7 +32,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 33%;    
+    margin-top: 33%;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding: 10px;
@@ -47,4 +50,10 @@
 
 .logo-container + p {
     margin-bottom: 10px;
+}
+
+/* Form right */
+
+.form-right {
+    flex: 2;
 }
