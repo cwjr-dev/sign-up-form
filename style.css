@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-container {
+    height: 100vh;
+    display: flex;    
+}
+
+.form-left {    
+    background-image: url("images/green-leaf-plant.jpg");
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.form-right {
+    flex: 2;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 33%;    
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 10px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.logo-text {
+    font-family: "Momo Trust Display", Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 4rem;
+}
+
+.logo-container + p {
+    margin-bottom: 10px;
+}
