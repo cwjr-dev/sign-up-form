@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .form-container {
@@ -31,8 +37,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 33%;
+    gap: 10px;    
+    margin-top: 200px;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding: 10px;
@@ -55,5 +61,80 @@
 /* Form right */
 
 .form-right {
+    background-color: rgb(241, 241, 241);
     flex: 2;
+}
+
+.description-container {
+    padding: 150px 200px 50px 50px;
+}
+
+.description-container > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.description-container > p:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+.form-input {
+    background-color: white;
+    padding: 25px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.form-input > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.input-row {
+    display: flex;
+    gap: 80px;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+input {    
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    outline: 1px solid lightgray;
+}
+
+input:focus {    
+    outline: 1px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+input:user-invalid {
+    outline: 1px solid red;
+}
+
+.form-actions {
+    padding: 25px 50px 30px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(0, 97, 0);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.form-actions a {
+    text-decoration: none;
+    color:  rgb(0, 97, 0);
 }
